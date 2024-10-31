@@ -1,0 +1,14 @@
+.empty-card__link {
+  text-transform: uppercase;
+}
+
+.empty-card__text {
+  font-size: 12px;
+  line-height: 16px;
+  color: $color-text;
+}
+
+.empty-card__button {
+  background-color: $neutral-color-1;
+  color: $color-text;
+}
