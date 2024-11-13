@@ -1,7 +1,16 @@
 .goals {
-  background-color: $neutral-color-1;
+  margin-bottom: 20px;
 }
 
 .goals__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.goals__item {
+  background-color: $neutral-color-1;
 }
