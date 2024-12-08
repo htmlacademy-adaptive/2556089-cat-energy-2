@@ -8,4 +8,22 @@
   &--low {
     line-height: 24px;
   }
+
+  @media (min-width: $tablet-width) {
+
+    font-size: 36px;
+    line-height: 36px;
+
+    &--low {
+      font-size: 32px;
+      line-height: 32px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--low {
+      font-size: 40px;
+      line-height: 40px;
+    }
+  }
 }

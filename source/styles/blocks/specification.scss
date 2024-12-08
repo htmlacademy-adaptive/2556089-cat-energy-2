@@ -1,16 +1,24 @@
 .specification {
   margin-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 63px;
+    border-bottom: 1px solid $color-index-divider;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 86px;
+  }
 }
 
 .specification__title {
   margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 40px;
-  }
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 32px;
+    margin-bottom: 72px;
   }
 }
 
@@ -27,42 +35,56 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  position: relative;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(2, 1fr);
+    gap: 94px 59px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
   }
 }
 
 .specification__item {
+  display: flex;
+  gap: 20px;
   position: relative;
-  padding: 2px 0 4px 80px;
-  min-height: 60px;
+  counter-increment: counter 1;
 
   &::before {
-    position: absolute;
     content: "";
     width: 60px;
     height: 60px;
     background-color: $accent;
-    background-size: 30px 32px;
+    background-size: 25px 28px;
     background-repeat: no-repeat;
     background-position: center;
-    left: 0;
+    flex-shrink: 0;
   }
 
   @media (min-width: $tablet-width) {
-    min-height: 80px;
-    padding: 111px 0 0;
+    flex-direction: column;
+    gap: 31px;
+    padding-bottom: 40px;
 
     &::before {
       width: 80px;
       height: 80px;
-      top: 0;
+    }
+
+    &::after {
+      content: counter(counter);
+      font-family: $secondary-font;
+      color: $neutral-color-1;
+      font-size: 280px;
+      font-weight: 400;
+      line-height: 280px;
+      position: absolute;
+      z-index: -1;
+      top: -40px;
+      left: 113px;
     }
   }
 }
@@ -70,6 +92,12 @@
 .specification__item--healthy {
   &::before {
     background-image: url("../../icons/stack.svg#leaf-healthy");
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      left: 117px;
+    }
   }
 }
 
