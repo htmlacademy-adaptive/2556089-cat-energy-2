@@ -1,1 +1,28 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
+body {
+  font-family: $primary-font;
+  font-weight: $primary-font-weight;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: $secondary-color;
+  color: $primary-color;
+  min-width: 320px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+  :where(picture,
+source) {
+    display: contents;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  object-fit: contain;
+  height: auto;
+}

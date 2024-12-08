@@ -1,0 +1,21 @@
+.button {
+  font-family: $secondary-font;
+  background-color: $accent;
+  color: $secondary-color;
+  display: inline-block;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  width: 100%;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}

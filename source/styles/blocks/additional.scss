@@ -1,0 +1,138 @@
+.additional {
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 80px;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 96px;
+    }
+  }
+}
+
+.additional__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+
+  @media (min-width: $tablet-width) {
+    gap: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    gap: 80px;
+  }
+}
+
+.additional__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  flex-grow: 1;
+  border-bottom: 1px solid $color-catalog-divider-2;
+
+  @media (min-width: $tablet-width) {
+    border-left: 1px solid $color-catalog-divider-2;
+    border-right: 1px solid $color-catalog-divider-2;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-left: none;
+    border-right: none;
+  }
+}
+
+.additional__item {
+  border-top: 1px solid $color-catalog-divider-2;
+}
+
+.additional__text {
+  justify-self: right;
+
+  @media (min-width: $tablet-width) {
+    min-width: 42px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+
+.additional__title {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: inherit;
+  margin-bottom: 36px;
+}
+
+.additional__subtitle {
+  margin-bottom: 35px;
+  position: relative;
+  width: fit-content;
+  background-color: $secondary-color;
+  box-shadow: 40px 0 0 0 $secondary-color, -40px 0 0 0 $secondary-color;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100vw;
+    height: 2px;
+    background-color: $accent;
+    top: 10px;
+    right: 0;
+    box-shadow: 100vw 0 0 0 $accent;
+    z-index: -1;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 80px;
+    padding-left: 40px;
+    box-shadow: 40px 0 0 0 $secondary-color;
+
+    &::before {
+      top: 14px;
+      box-shadow: 100vw 0 0 0 $accent;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    box-shadow: 40px 0 0 0 $secondary-color, -40px 0 0 0 $secondary-color;
+
+    &::before {
+      top: 18px;
+    }
+  }
+}
+
+.additional__button {
+  @media (min-width: $tablet-width) {
+    grid-column: auto/span 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 3/4;
+    width: inherit;
+    padding: 10px 91px;
+  }
+}
+
+.additional__all {
+  display: block;
+  max-width: 161px;
+  padding: 187px 61px 43px 58px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 71px 125px 69px 421px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 185px 42px 43px;
+    text-align: center;
+    width: 245px;
+  }
+}

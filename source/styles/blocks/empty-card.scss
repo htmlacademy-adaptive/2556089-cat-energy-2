@@ -1,0 +1,75 @@
+.empty-card__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 78px 0 24px;
+  gap: 8px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-image: url("../../icons/stack.svg#plus");
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 25px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: unset;
+    gap: 23px;
+    padding: 160px 37px 40px;
+    height: 100%;
+    box-sizing: border-box;
+    border: 1px solid $neutral-color-1;
+
+    &::before {
+      width: 60px;
+      height: 60px;
+      top: 50px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 26px;
+    padding-top: 150px;
+  }
+}
+
+.empty-card__link {
+  text-transform: uppercase;
+}
+
+.empty-card__text {
+  font-size: 12px;
+  line-height: 16px;
+  color: $color-text;
+  margin: 0 0 12px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: auto;
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+.empty-card__button {
+  background-color: $neutral-color-1;
+  color: $color-text;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    background-color: #ebebeb;
+    color: rgba(68, 68, 68, 1);
+  }
+}

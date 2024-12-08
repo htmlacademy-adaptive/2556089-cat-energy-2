@@ -1,7 +1,9 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Михаил Воронов](https://up.htmlacademy.ru/adaptive-individual/2/user/2556089).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
+* Сайт: [Кэт энерджи](https://github.com/Pohmeloff/2556089-cat-energy-2).
+
 
 ---
 

@@ -1,0 +1,46 @@
+.form__input {
+  font-family: $secondary-font;
+  font-size: 20px;
+  padding: 12px 13px;
+  line-height: 30px;
+  color: $color-text;
+  text-transform: uppercase;
+  border: 1px solid $neutral-color-3;
+
+  &:hover {
+    border-color: $color-catalog-divider-2;
+  }
+
+  &:focus {
+    border: 1px solid $color-text;
+    outline: 1px solid $color-text;
+  }
+
+  &--error {
+    border: 1px solid $error-color;
+    outline: 1px solid $error-color;
+  }
+
+
+  @media (min-width: $tablet-width) {
+    width: 376px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 496px;
+  }
+}
+
+
+.form__button {
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  width: auto;
+  padding: 15px 82px;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 15px 70px;
+  }
+}
